@@ -26,7 +26,7 @@ public class Venta {
     private Cliente cliente;
 
     @Column(precision = 10, scale = 0)
-    private BigDecimal total;
+    private Double total;
 
     @OneToMany(mappedBy = "venta", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ProductoVenta> productos;

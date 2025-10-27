@@ -29,5 +29,5 @@ public class ProductoVenta {
     private Integer cantidad;
 
     @Column(precision = 10, scale = 0)
-    private BigDecimal precio;
+    private Double precio;
 }
